@@ -1,6 +1,6 @@
 # 生成证书函数
 + 概述：默认采用三级的证书结构，自上而下分别为链证书、机构证书、节点证书
-## gen_chain_cert
+## gen_chain_cert()
 ```shell
 gen_chain_cert() {
     path="$2"
@@ -46,3 +46,4 @@ gen_agency_cert() {
     echo "build $name agency cert successful!"
 }
 ```
++ 使用openssl命令生成机构私钥*agency.key*
