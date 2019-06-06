@@ -86,3 +86,65 @@ gen_node_cert() {
 ```
 + 节点生成私钥*node.key*和证书请求文件*node.csr*
 + 机构管理员使用私钥*agency.key*和证书请求文件*node.csr*为节点颁发证书*node.crt*
++ **gen_node_cert_gm()** 为国密版本的证书生成函数
+
+## generate_cert_conf()
+```shell
+generate_cert_conf()
+{
+    local output=$1
+    cat << EOF > ${output} 
+[ca]
+default_ca=default_ca
+[default_ca]
+default_days = 365
+default_md = sha256
+[req]
+distinguished_name = req_distinguished_name
+req_extensions = v3_req
+[req_distinguished_name]
+countryName = CN
+countryName_default = CN
+stateOrProvinceName = State or Province Name (full name)
+stateOrProvinceName_default =GuangDong
+localityName = Locality Name (eg, city)
+localityName_default = ShenZhen
+organizationalUnitName = Organizational Unit Name (eg, section)
+organizationalUnitName_default = fisco-bcos
+commonName =  Organizational  commonName (eg, fisco-bcos)
+commonName_default = fisco-bcos
+commonName_max = 64
+[ v3_req ]
+basicConstraints = CA:FALSE
+keyUsage = nonRepudiation, digitalSignature, keyEncipherment
+[ v4_req ]
+basicConstraints = CA:TRUE
+EOF
+}
+```
++ 显示了一些证书的基本信息，以及一些配置的默认设置
++ 默认使用***sha256***计算哈希值进行加密
+
+
+## generate_cert_conf_gm()
+```shell
+generate_cert_conf_gm()
+{
+    local output=$1
+    cat << EOF > ${output} 
+HOME			= .
+RANDFILE		= $ENV::HOME/.rnd
+oid_section		= new_oids
+[ new_oids ]
+tsa_policy1 = 1.2.3.4.1
+tsa_policy2 = 1.2.3.4.5.6
+tsa_policy3 = 1.2.3.4.5.7
+####################################################################
+[ ca ]
+default_ca	= CA_default		# The default ca section
+}
+```
++ 显示了国密版本证书的一些基本信息，以及默认取值
++ ***HOME*** 为起始的地址
++ ***oid_section*** ：指定了一个字段，该字段配置文件中包含的额外的对象标识符
++ 上面还有TSA实例所使用的Policy
