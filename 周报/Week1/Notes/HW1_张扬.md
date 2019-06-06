@@ -17,7 +17,9 @@ gen_chain_cert() {
 ```
 + 联盟链委员会使用openssl命令请求链私钥，并输出在*ca.key*文件中，长度为2048
 + 根据ca.key生成链证书*ca.crt*
-+ 使用-new，说明是要生成证书请求，当使用-x509选项的时候，说明是要生成自签名证书
++ **genrsa**为生成并输入一个rsa私钥，rsa为非对称加密算法
++ **-out**为输出的路径
++ 使用 **-new**，说明是要生成证书请求，当使用 **-x509**选项的时候，说明是要生成自签名证书
 + **gen_chain_cert_gm()** 为使用国密版本的证书生成函数
 
 ## gen_agency_cert()
@@ -86,6 +88,7 @@ gen_node_cert() {
 ```
 + 节点生成私钥*node.key*和证书请求文件*node.csr*
 + 机构管理员使用私钥*agency.key*和证书请求文件*node.csr*为节点颁发证书*node.crt*
++ **openssl ec**为椭圆曲线密钥处理工具,**-text**:print the key;**-in**:input file;**-noout**:don't print key out
 + **gen_node_cert_gm()** 为国密版本的证书生成函数
 
 ## generate_cert_conf()
@@ -146,5 +149,6 @@ default_ca	= CA_default		# The default ca section
 ```
 + 显示了国密版本证书的一些基本信息，以及默认取值
 + ***HOME*** 为起始的地址
++ ***RANDFILE*** 为读取和写入随机数种子信息的文件
 + ***oid_section*** ：指定了一个字段，该字段配置文件中包含的额外的对象标识符
 + 上面还有TSA实例所使用的Policy
