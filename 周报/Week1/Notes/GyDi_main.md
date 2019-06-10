@@ -1,4 +1,4 @@
-# main 函数
+# main 函数阅读
 
 - 判断参数`use_ip_param`的值
   - 为空，说明没用-l 或-f
@@ -47,3 +47,22 @@ $(curl -s https://raw.githubusercontent.com/FISCO-BCOS/FISCO-BCOS/master/release
 
 - 给所有 ip 生成对应的节点配置和启动停止脚本
 - 最后删掉 log 信息，打印建链结果
+
+## Linux 命令学习笔记
+
+- `set -e` 若命令执行结果值不等于 0，立刻退出 shell
+- 函数 `check_env` 主要是 判断有没有装 openssl 还有判断 OS 是哪个
+- `-z` 判断值为不为 0
+
+- `uname -s` 显示操作系统名称
+- shell getopts 的用法
+
+```shell
+  while getopts "f:l:o:p:e:t:v:icszhgTFdC:S" option; do echo "."; done
+  # 这里的f，l，o等参数需要附加值
+  # 而icszhgTFdS可以不附加值
+```
+
+- local 定义变量，作用域仅限在函数体内
+
+- `pwd` 显示当前工作目录
