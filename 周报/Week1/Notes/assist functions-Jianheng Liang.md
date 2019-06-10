@@ -2,7 +2,7 @@
 
 ## help()  
 echo $1输出传递给函数的第一个参数。然后将help函数中不同指令对应的不同操作输出到屏幕上，方便用户选择。  
-![](https://github.com/fisco-bcos-group1/WeBank/tree/master/%E5%91%A8%E6%8A%A5/Week1/assets1.JPG) 
+![](../assets/1.JPG) 
 
 ## LOG-WARN()、LOG-INFO()  
 两个函数的作用是输出登陆警告和登陆信息。输出警告的格式是WARN+警告内容，输出登陆信息的格式是INFO+登陆内容。  
