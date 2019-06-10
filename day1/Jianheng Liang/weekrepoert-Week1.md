@@ -22,26 +22,26 @@ $ cp nodes/127.0.0.1/sdk/* console/conf/
 执行上述代码后，系统会返回对应的合约地址。我们可以通过HelloWorld中原有的方法查询链的信息：比如getBlockNumber获取当前块高，get、set方法进行内容输出、设置name等操作。  
 熟悉相关操作后，我尝试完成实训课上的练习，以下是操作结果：  
 ## 查看区块高度 
-![](https://github.com/fisco-bcos-group1/WeBank/blob/master/WeekReport/day1/Jianheng%20Liang/pic/20190602221928.png)  
+![](https://github.com/fisco-bcos-group1/WeBank/blob/master/day1/Jianheng%20Liang/pic/20190602221928.png)  
   
 ## 使用查看getDeployLog
-![](https://github.com/fisco-bcos-group1/WeBank/blob/master/WeekReport/day1/Jianheng%20Liang/pic/20190602221940.png)  
+![](https://github.com/fisco-bcos-group1/WeBank/blob/master/day1/Jianheng%20Liang/pic/20190602221940.png)  
   
 ## 调用智能合约
-![](https://github.com/fisco-bcos-group1/WeBank/blob/master/WeekReport/day1/Jianheng%20Liang/pic/20190602221944.png) 
+![](https://github.com/fisco-bcos-group1/WeBank/blob/master/day1/Jianheng%20Liang/pic/20190602221944.png) 
   
 ## 再次查看区块高度
-![](https://github.com/fisco-bcos-group1/WeBank/blob/master/WeekReport/day1/Jianheng%20Liang/pic/20190602221949.png) 
+![](https://github.com/fisco-bcos-group1/WeBank/blob/master/day1/Jianheng%20Liang/pic/20190602221949.png) 
   
 ## 获取区块数据
-![](https://github.com/fisco-bcos-group1/WeBank/blob/master/WeekReport/day1/Jianheng%20Liang/pic/20190602221955.png) 
+![](https://github.com/fisco-bcos-group1/WeBank/blob/master/day1/Jianheng%20Liang/pic/20190602221955.png) 
   
 ## 按CNS方式部署HelloWorld智能合约
-![](https://github.com/fisco-bcos-group1/WeBank/blob/master/WeekReport/day1/Jianheng%20Liang/pic/20190602221958.png) 
+![](https://github.com/fisco-bcos-group1/WeBank/blob/master/day1/Jianheng%20Liang/pic/20190602221958.png) 
   
 ## 再次查看区块高度
-![](https://github.com/fisco-bcos-group1/WeBank/blob/master/WeekReport/day1/Jianheng%20Liang/pic/20190602222002.png)   
+![](https://github.com/fisco-bcos-group1/WeBank/blob/master/day1/Jianheng%20Liang/pic/20190602222002.png)   
 
   
 ## 获取区块数据
-![](https://github.com/fisco-bcos-group1/WeBank/blob/master/WeekReport/day1/Jianheng%20Liang/pic/20190602222005.png) 
+![](https://github.com/fisco-bcos-group1/WeBank/blob/master/day1/Jianheng%20Liang/pic/20190602222005.png) 
