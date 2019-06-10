@@ -957,9 +957,9 @@ main() {
     if [ -z "${checkIP}" ]; then
       LOG_WARN "Please check IP address: ${ip}"
     fi
-    [ "$num" == "$ip" ] || [ -z "${num}" ] && num=${node_num}
+    [ "$num" == "$ip" ] || [ -z "${num}" ] && num=${node_num} # 没懂 $num == $ip 为什么
     echo "Processing IP:${ip} Total:${num} Agency:${agency_array[${server_count}]} Groups:${group_array[server_count]}"
-    [ -z "${ip_node_counts[${ip//./}]}" ] && ip_node_counts[${ip//./}]=0
+    [ -z "${ip_node_counts[${ip//./}]}" ] && ip_node_counts[${ip//./}]=0  # 没懂这一步，避免冲突？
     for ((i = 0; i < num; ++i)); do
       echo "Processing IP:${ip} ID:${i} node's key" >>${output_dir}/${logfile}
       node_dir="${output_dir}/${ip}/node${ip_node_counts[${ip//./}]}"
@@ -1081,6 +1081,7 @@ main() {
     if [ -n "$make_tar" ]; then cd ${output_dir} && tar zcf "${ip}.tar.gz" "${ip}" && cd ${current_dir}; fi
     ((++server_count))
   done
+  
   rm ${output_dir}/${logfile}
   if [ "${use_ip_param}" == "false" ]; then
     echo "=============================================================="
