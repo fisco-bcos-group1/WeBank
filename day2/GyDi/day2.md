@@ -86,7 +86,8 @@ contract Credit{
 4. `getCreditSymbol()` 用于获取积分的简称。
 5. 在`_transfer()`里进行require判断时，加上了错误信息。
 
-> 智能合约0.4到0.5新特性 [中文链接](https://zhuanlan.zhihu.com/p/54169418)
+- 智能合约 [文档](https://solidity-cn.readthedocs.io/zh/develop/)
+- 智能合约0.4到0.5新特性 [中文链接](https://zhuanlan.zhihu.com/p/54169418)
 
 #### 2. 控制台部署调用合约
 
