@@ -77,7 +77,6 @@ contract Credit{
         return msg.sender;
     }
 }
-
 ```
 
 这里我添了一些功能：
@@ -87,6 +86,7 @@ contract Credit{
 4. `getCreditSymbol()` 用于获取积分的简称。
 5. 在`_transfer()`里进行require判断时，加上了错误信息。
 
+> 智能合约0.4到0.5新特性 [中文链接](https://zhuanlan.zhihu.com/p/54169418)
 
 #### 2. 控制台部署调用合约
 
@@ -187,9 +187,9 @@ print(response.text)
 
 
 ### 参考链接：
-> [JSON-RPC API](https://fisco-bcos-documentation.readthedocs.io/zh_CN/release-2.0/docs/api.html#getclientversion)
-> [Ethereum Contract ABI](https://solidity.readthedocs.io/en/latest/abi-spec.html)
-> [web3.js](https://web3js.readthedocs.io/en/1.0/callbacks-promises-events.html)
-> [web3.js API 中文文档](https://www.cnblogs.com/zdz8207/p/qkl-web3-js-api.html)
-> [web3.py 文档](https://web3py.readthedocs.io/en/stable/quickstart.html)
-> [web3.py github](https://github.com/pipermerriam/web3.py)
+[JSON-RPC API](https://fisco-bcos-documentation.readthedocs.io/zh_CN/release-2.0/docs/api.html#getclientversion)
+[Ethereum Contract ABI](https://solidity.readthedocs.io/en/latest/abi-spec.html)
+[web3.js](https://web3js.readthedocs.io/en/1.0/callbacks-promises-events.html)
+[web3.js API 中文文档](https://www.cnblogs.com/zdz8207/p/qkl-web3-js-api.html)
+[web3.py 文档](https://web3py.readthedocs.io/en/stable/quickstart.html)
+[web3.py github](https://github.com/pipermerriam/web3.py)
