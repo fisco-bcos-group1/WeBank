@@ -37,8 +37,8 @@
 ![image](./assets/7.png)
 
 ### 8. 分别查看系统账户和用户账户余额
-![image](./assets/8.png)
 ![image](./assets/9.png)
+![image](./assets/8.png)
 
 ## Spring Boot Starter
 
