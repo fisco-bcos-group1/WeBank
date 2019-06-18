@@ -1,1 +1,1 @@
-# Pictures for report
+# Pictures for the report
