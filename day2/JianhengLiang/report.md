@@ -11,27 +11,27 @@
 ### 控制台开发
 #### 实验步骤  
 1.编写合约  
-[](https://github.com/fisco-bcos-group1/WeBank/blob/master/day2/JianhengLiang/assets/0.JPG)  
+![](https://github.com/fisco-bcos-group1/WeBank/blob/master/day2/JianhengLiang/assets/0.JPG)  
 2.使用```get_account.sh```分别创建商家和用户两个账号  
-[](https://github.com/fisco-bcos-group1/WeBank/blob/master/day2/JianhengLiang/assets/1.JPG)  
+![](https://github.com/fisco-bcos-group1/WeBank/blob/master/day2/JianhengLiang/assets/1.JPG)  
 3.使用商家的私钥登陆FISCO-BCOS控制台  
-[](https://github.com/fisco-bcos-group1/WeBank/blob/master/day2/JianhengLiang/assets/2.JPG)  
+![](https://github.com/fisco-bcos-group1/WeBank/blob/master/day2/JianhengLiang/assets/2.JPG)  
 4.使用用户的私钥登陆FISCO-BCOS控制台  
-[](https://github.com/fisco-bcos-group1/WeBank/blob/master/day2/JianhengLiang/assets/3.JPG)  
+![](https://github.com/fisco-bcos-group1/WeBank/blob/master/day2/JianhengLiang/assets/3.JPG)  
 5.在商家的账号上部署```Credit.sol```，初始化总积分  
-[](https://github.com/fisco-bcos-group1/WeBank/blob/master/day2/JianhengLiang/assets/4.JPG)  
+![](https://github.com/fisco-bcos-group1/WeBank/blob/master/day2/JianhengLiang/assets/4.JPG)  
 6.查询总积分  
-[](https://github.com/fisco-bcos-group1/WeBank/blob/master/day2/JianhengLiang/assets/5.JPG)  
+![](https://github.com/fisco-bcos-group1/WeBank/blob/master/day2/JianhengLiang/assets/5.JPG)  
 7.调用```transfer```方法从商家的账号向用户的帐号转账100积分  
-[](https://github.com/fisco-bcos-group1/WeBank/blob/master/day2/JianhengLiang/assets/7.JPG)  
+![](https://github.com/fisco-bcos-group1/WeBank/blob/master/day2/JianhengLiang/assets/7.JPG)  
 8.调用```balanceOf```方法查询商家账号的积分  
-[](https://github.com/fisco-bcos-group1/WeBank/blob/master/day2/JianhengLiang/assets/6.JPG)  
+![](https://github.com/fisco-bcos-group1/WeBank/blob/master/day2/JianhengLiang/assets/6.JPG)  
 9.调用```balanceOf```方法查询用户账号的积分  
-[](https://github.com/fisco-bcos-group1/WeBank/blob/master/day2/JianhengLiang/assets/9.JPG)  
+![](https://github.com/fisco-bcos-group1/WeBank/blob/master/day2/JianhengLiang/assets/9.JPG)  
 ### SDK开发  
 1.从github下载spring-boot-starter  
-[](https://github.com/fisco-bcos-group1/WeBank/blob/master/day2/JianhengLiang/assets/2.1.JPG)  
+![](https://github.com/fisco-bcos-group1/WeBank/blob/master/day2/JianhengLiang/assets/2.1.JPG)  
 2.搭建gradle环境  
-[](https://github.com/fisco-bcos-group1/WeBank/blob/master/day2/JianhengLiang/assets/2.2.JPG)  
+![](https://github.com/fisco-bcos-group1/WeBank/blob/master/day2/JianhengLiang/assets/2.2.JPG)  
 3.运行gradle  
-[](https://github.com/fisco-bcos-group1/WeBank/blob/master/day2/JianhengLiang/assets/2.3.JPG)
+![](https://github.com/fisco-bcos-group1/WeBank/blob/master/day2/JianhengLiang/assets/2.3.JPG)
