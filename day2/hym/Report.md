@@ -57,7 +57,7 @@ function getBalance() public view returns (uint) {
 
 * 启动节点
 
-https://github.com/fisco-bcos-group1/WeBank/blob/master/day2/hym/assets/6.jpg
+![avatar](https://github.com/fisco-bcos-group1/WeBank/blob/master/day2/hym/assets/6.jpg)
 
 * 使用get_account脚本生成两个账户，分别用于书店和客户
 
