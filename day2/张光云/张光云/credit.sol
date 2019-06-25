@@ -2,7 +2,7 @@ pragma solidity ^0.4.24;
 
 contract credit {
 
-    //总积分
+    //member
     uint sumCredits;
     uint numberUser;
     address shoper;
