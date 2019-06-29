@@ -5,9 +5,11 @@ Author: GyDi
 ## 实验：基于区块链的积分系统
 
 ### 实验介绍
+
 本次实验我们实现一个积分系统，由商家进行积分发放，用户进行积分消费。
 
 功能介绍：
+
 1. 总积分初始化
 2. 总积分查询
 3. 积分转账
@@ -17,6 +19,7 @@ Author: GyDi
 ### 实验步骤
 
 #### 1. 编写智能合约
+
 ```solidity
 pragma solidity ^0.4.25;
 
@@ -80,14 +83,15 @@ contract Credit{
 ```
 
 这里我添了一些功能：
+
 1. `getBalance()`函数用于获取本人的余额。
 2. `getSelfAccount()` 用于获取当前用户的地址。
 3. `getCreditName()` 用于获取积分的名称。
 4. `getCreditSymbol()` 用于获取积分的简称。
-5. 在`_transfer()`里进行require判断时，加上了错误信息。
+5. 在`_transfer()`里进行 require 判断时，加上了错误信息。
 
 - 智能合约 [文档](https://solidity-cn.readthedocs.io/zh/develop/)
-- 智能合约0.4到0.5新特性 [中文链接](https://zhuanlan.zhihu.com/p/54169418)
+- 智能合约 0.4 到 0.5 新特性 [中文链接](https://zhuanlan.zhihu.com/p/54169418)
 
 #### 2. 控制台部署调用合约
 
@@ -104,17 +108,16 @@ Account 2
 [INFO] Private Key: 0x643ea693992e7fde35370ec563a6fda4f3164de88d1126a087459f0fba25923f
 ```
 
-
 2. 分别用两个账户的私钥登录控制台
 
 ![log in console](./assets/flameshot-1.png)
 
-这里用两个参数，分别是groupid和私钥，来启动控制台即可。私钥的0x前缀需要去掉。如图：左边的是用于部署合约的地址。
+这里用两个参数，分别是 groupid 和私钥，来启动控制台即可。私钥的 0x 前缀需要去掉。如图：左边的是用于部署合约的地址。
 
 3. 部署合约并查看账户余额
 
-- boss部署合约，获得合约地址`contract address:0x3518c9a7efd08fc0f2b77b284f1c0097e0c6d73b`
-- boss查看账户余额
+- boss 部署合约，获得合约地址`contract address:0x3518c9a7efd08fc0f2b77b284f1c0097e0c6d73b`
+- boss 查看账户余额
 
 ![deploy contract](./assets/flameshot-06-16-5638.png)
 
@@ -123,8 +126,8 @@ Account 2
 ![user balance](./assets/flameshot-06-16-4942.png)
 
 - 转账
-  - boss向用户转200
-  - boss查看自己的余额
+  - boss 向用户转 200
+  - boss 查看自己的余额
   - 用户查看自己的余额
 
 ![transfer](./assets/flameshot-06-16-3148.png)
@@ -133,8 +136,7 @@ Account 2
 
 ![test func](./assets/flameshot-0616183000.png)
 
-
-#### 3. 使用SDK
+#### 3. 使用 SDK
 
 1. 安装 jdk 和 eclipse
 2. 获取源码`$ git clone https://github.com/FISCO-BCOS/spring-boot-starter.git`
@@ -143,13 +145,13 @@ Account 2
 
 ![run gradlew](./assets/flameshot-0616194913.png)
 
-5. 运行几个test用例，成功
+5. 运行几个 test 用例，成功
 
-这里有个问题是，使用Junit测试会报异常
+这里有个问题是，使用 Junit 测试会报异常
 
 ![junit exception](assets/flameshot-0616191912.png)
 
-使用Gradle Test测试成功
+使用 Gradle Test 测试成功
 
 ![Gradle Test](assets/flameshot-0616191847.png)
 
@@ -161,13 +163,13 @@ Spring Boot Starter [参考链接](https://github.com/FISCO-BCOS/spring-boot-sta
 
 在阅读 FISCO-BCOS 文档的时候，看到除了 Web3SDK 之外，还可以通过 RPC 接口访问链上数据。
 
-### 通过curl访问链
+### 通过 curl 访问链
 
 调用`curl -X POST --data '{"jsonrpc":"2.0","method":"getClientVersion","params":[],"id":1}' http://127.0.0.1:8545 | jq`
 
 ![curl](assets/flameshot-0616202538.png)
 
-### 通过python脚本访问
+### 通过 python 脚本访问
 
 ```python
 import requests
@@ -186,8 +188,8 @@ print(response.text)
 
 ![python](./assets/flameshot-0616214134.png)
 
-
 ### 参考链接：
+
 [JSON-RPC API](https://fisco-bcos-documentation.readthedocs.io/zh_CN/release-2.0/docs/api.html#getclientversion)
 [Ethereum Contract ABI](https://solidity.readthedocs.io/en/latest/abi-spec.html)
 [web3.js](https://web3js.readthedocs.io/en/1.0/callbacks-promises-events.html)
