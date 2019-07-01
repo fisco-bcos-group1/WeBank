@@ -80,7 +80,7 @@ function registerUser(...) {
 }
 
 // 注册音乐，登记音乐版权
-function registerMusic(binhash, ...) {
+function registerMusic(_binhash, ...) {
     // 检查binhash是否存在musics中，存在->返回错误
     // 构造music，music.owner = msg.sender
     // musics.push(music)
