@@ -1,6 +1,6 @@
 # 详细设计
 
-## 智能合约设计 <span style="color:red;">V1.0</span>
+## 智能合约设计 V1.0
 
 ### 一、功能列表
 
@@ -58,10 +58,19 @@ struct UserEntity { // 这里的用户实体可以是任何，包括节点，用
     more_info: ...  //
 }
 
+struct Notice {     // 一个系统通知
+    from: address,  // 通知发起方
+    to: address,    // 接收方
+    time: string,   // 通知时间
+    text: string,   // 通知内容
+    valid: bool     // 是否有效/已读
+}
+
 mapping(address => UserEntity) account;  // 每个地址对应一个用户实体
 
 Music[] musics;     // 记录链上所有的音乐版权信息
 Record[] records;   // 记录链上所有的授权信息
+Notice[] notices;   // 记录所有通知消息
 
 // 注册用户实体
 function registerUser(...) {
