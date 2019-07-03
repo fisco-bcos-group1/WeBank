@@ -34,36 +34,38 @@
 struct Music { // 音乐的版权信息
     owner: address,    // 音乐版权所有者的地址
     bin: string,       // 记录音乐二进制文件的hash
-    name: string,      // 音乐名称
-    ...,               // 省略音乐其他信息
+    mname: string,      // 音乐名称
+    singer: string,     // 歌手
     isvalid: bool,     // 标识该版权是否有效
-    beg_time: string,  // 版权有效期开始日期
-    end_time: string,  // 版权有效期结束日期，可以设置为NaN
-    platform: string,  // 信息变更的节点名称
-    modified: string   // 信息变更的时间
+    alltime: string    // 所有时间，beg_time # end_time # modified
+    // beg_time: string,  // 版权有效期开始日期
+    // end_time: string,  // 版权有效期结束日期，可以设置为NaN
+    // modified: string   // 信息变更的时间
 }
 
 struct Record { // 一个授权记录
     user: address,     // 被授权人地址
     author: address,   // 授权人/版权拥有人地址
-    bin: string,       // 音乐的hash
-    beg_time: string,  // 版权使用有效期 开始时间
-    end_time: string,  // 版权使用有效期 结束时间
-    platform: string,  // 信息变更的节点名称
-    modified: string   // 信息变更的时间
+    alltime: string,   // 所有时间，beg_time # end_time # modified
+    music: string,      // bin # mname # singer # owner
+    info: string,       // applicantName # phone # use # location # length # text # price
 }
 
 struct UserEntity { // 这里的用户实体可以是任何，包括节点，用户，企业
     name: string,   // 用户实体的名称
-    more_info: ...  //
+    type: string,   // 用户类型 - user,company,musician,judge
+    id: string,     // 企业编号或身份证
+    location: string,
+    phone: string,
+    email: string
 }
 
 struct Notice {     // 一个系统通知
     from: address,  // 通知发起方
     to: address,    // 接收方
-    time: string,   // 通知时间
-    text: string,   // 通知内容
-    valid: bool     // 是否有效/已读
+    music:string,   // mname # singer # recordTime # applyTime
+    info: string,   // applicantName # phone # use # location # length # text # price
+    valid: bool     // 是否授权
 }
 
 mapping(address => UserEntity) account;  // 每个地址对应一个用户实体
