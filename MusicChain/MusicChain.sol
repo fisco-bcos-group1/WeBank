@@ -178,20 +178,22 @@ contract MusicChain{
         return (user.name, user.kind, user.id, user.location, user.phone, user.email);
     }
 
-    function getNoticeNumberByStart(address _start) public view returns (uint8[]) {
+    // new - delete parameter
+    function getNoticeNumberByStart() public view returns (uint8[]) {
         uint8[] storage idxs;
         for (uint8 i = 0; i < notices.length; i++){
-            if (notices[i].start == _start){
+            if (notices[i].start == msg.sender){
                 idxs.push(i);
             }
         }
         return idxs;
     }
 
-    function getNoticeNumberByTo(address _to) public view returns (uint8[]) {
+    // new - delete parameter
+    function getNoticeNumberByTo() public view returns (uint8[]) {
         uint8[] storage idxs;
         for (uint8 i = 0; i < notices.length; i++){
-            if (notices[i].to == _to){
+            if (notices[i].to == msg.sender){
                 idxs.push(i);
             }
         }
