@@ -125,21 +125,7 @@ contract MusicChain{
     function getMusic(uint numb) public view returns(address,string,string,string, bool,string){
         return (musics[numb].owner, musics[numb].bin, musics[numb].mname, musics[numb].singer, musics[numb].isvalid, musics[numb].alltime);
     }
-    /* old
-    function getMusicNumber(string _mname,string _singer) public view returns(uint8[]) {
-        uint8 num1 = 0;
-        uint8[] num2;
-        uint8 count = 0;
-        for(num1 = 0;num1 < musics.length; num1++){
-            if((keccak256(musics[num1].mname) == keccak256(_mname)) && (keccak256(musics[num1].singer) == keccak256(_singer))){
-                //return main info
-                num2[count] = num1;
-                count++;
-            }
-        }
-        return num2;
-    }*/
-
+    
     // new - get all musics that belong to msg.sender
     function getMusicNumber() public view returns(uint8[]) {
         uint8[] num2;
