@@ -50,7 +50,7 @@ contract MusicChain{
     }
 
     //company registration
-    function registerCompany(string _name, string _kind, string _id, string _location, string _phone, string _email) public {
+    function registerCompany(string _name, string _id, string _location, string _phone, string _email) public {
         account[msg.sender].name = _name;
         account[msg.sender].phone = _phone;
         account[msg.sender].kind = "company";
@@ -60,7 +60,7 @@ contract MusicChain{
     }
 
     //musician registration
-    function registerMusician(string _name, string _kind, string _id, string _location, string _phone, string _email) public {
+    function registerMusician(string _name, string _id, string _location, string _phone, string _email) public {
         account[msg.sender].name = _name;
         account[msg.sender].phone = _phone;
         account[msg.sender].kind = "musician";
@@ -70,7 +70,7 @@ contract MusicChain{
     }
 
     //judge registration
-    function registerJudge(string _name, string _kind, string _id, string _location, string _phone, string _email) public {
+    function registerJudge(string _name, string _id, string _location, string _phone, string _email) public {
         account[msg.sender].name = _name;
         account[msg.sender].phone = _phone;
         account[msg.sender].kind = "judge";
