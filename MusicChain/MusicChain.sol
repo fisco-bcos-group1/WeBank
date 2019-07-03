@@ -163,6 +163,12 @@ contract MusicChain{
         return (user.name, user.kind, user.id, user.location, user.phone, user.email);
     }
 
+    // new
+    function getUserByAddress(address _user) public view returns (string,string,string,string,string,string) {
+        UserEntity storage user = account[_user];
+        return (user.name, user.kind, user.id, user.location, user.phone, user.email);
+    }
+
     function getNoticeNumberByStart(address _start) public view returns (uint8[]) {
         uint8[] storage idxs;
         for (uint8 i = 0; i < notices.length; i++){
