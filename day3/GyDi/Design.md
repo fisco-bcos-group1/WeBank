@@ -53,7 +53,7 @@ struct Record { // 一个授权记录
 
 struct UserEntity { // 这里的用户实体可以是任何，包括节点，用户，企业
     name: string,   // 用户实体的名称
-    type: string,   // 用户类型 - user,company,musician,judge
+    kind: string,   // 用户类型 - user,company,musician,judge
     id: string,     // 企业编号或身份证
     location: string,
     phone: string,
@@ -61,7 +61,7 @@ struct UserEntity { // 这里的用户实体可以是任何，包括节点，用
 }
 
 struct Notice {     // 一个系统通知
-    from: address,  // 通知发起方
+    start: address,  // 通知发起方
     to: address,    // 接收方
     music:string,   // mname # singer # recordTime # applyTime
     info: string,   // applicantName # phone # use # location # length # text # price
