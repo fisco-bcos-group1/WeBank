@@ -140,6 +140,15 @@ contract MusicChain{
         return num2;
     }
 
+    // new - not be tested!!!
+    function searchMusic(string _mname,string _singer) public view returns (address,string,string,string,string) {
+        for (uint8 i = 0; i < musics.length; i++) {
+            if (musics[i].isvalid && (keccak256(musics[i].mname) == keccak256(_mname)) && (keccak256(musics[i].singer) == keccak256(_singer))){
+                return (musics[i].owner, musics[i].bin, musics[i].mname, musics[i].singer, musics[i].alltime);
+            }
+        }
+    }
+
     function getRecord(uint numbe) public view returns(address,address,string,string,string){
         return (records[numbe].user,records[numbe].author,records[numbe].alltime,records[numbe].music,records[numbe].info);
     }
@@ -191,5 +200,10 @@ contract MusicChain{
 
     function getNotice(uint8 _idx) public view returns (address, address, string, string, bool) {
         return (notices[_idx].start, notices[_idx].to, notices[_idx].music, notices[_idx].info, notices[_idx].valid);
+    }
+
+    // new - not be tested!!!
+    function consumeNotice(uint8 _idx) public {
+        notices[_idx].valid = true;
     }
 }
