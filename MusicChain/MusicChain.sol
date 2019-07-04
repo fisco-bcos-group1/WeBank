@@ -17,7 +17,7 @@ contract MusicChain{
         string alltime;  // 所有时间，beg_time # end_time # modified
         string music;    // bin # mname # singer # owner
         string info;     // applicantName # phone # use # location # length # text # price
-        string genre;    //改于7-4 9:13 显示授权记录类型（转让，授权，撤销）
+        string genre;    //改于7-4 9:13 显示授权记录类型（transfer，authorize，cancel）
     }
 
     struct UserEntity { // 这里的用户实体可以是任何，包括节点，用户，企业
