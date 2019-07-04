@@ -17,8 +17,8 @@ contract MusicChain{
         string alltime;  // 所有时间，beg_time # end_time # modified
         string music;    // bin # mname # singer # owner
         string info;     // applicantName # phone # use # location # length # text # price
-        //string genre;    
-        //改于7-4 9:13 显示授权记录类型（transfer，authorize，cancel）
+        // string genre;
+        // 改于7-4 9:13 显示授权记录类型（transfer，authorize，cancel）
     }
 
     struct UserEntity { // 这里的用户实体可以是任何，包括节点，用户，企业
@@ -127,7 +127,7 @@ contract MusicChain{
     function getMusic(uint numb) public view returns(address,string,string,string, bool,string){
         return (musics[numb].owner, musics[numb].bin, musics[numb].mname, musics[numb].singer, musics[numb].isvalid, musics[numb].alltime);
     }
-    
+
     // new - get all musics that belong to msg.sender
     function getMusicNumber() public view returns(uint8[]) {
         uint8[] num2;
