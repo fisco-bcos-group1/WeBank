@@ -30,3 +30,11 @@
 [生成配置文件函数阅读报告](./Week1/Notes/配置文件阅读报告_hym.md)
 
 [主函数阅读报告](./Week1/Notes/GyDi_main.md)
+
+## 完成课上练习
+
+- 张扬：[练习报告](../day1/zy/weekreport1.md)
+- 张耀：[练习报告](../day1/GyDi/Work1.md)
+- 张光云：[练习报告](../day1/张光云/张光云-day1-console.md)
+- 黄旸珉：[练习报告](../day1/hym/周记.md)
+- 梁健恒：[练习报告](../day1/JianhengLiang/weekrepoert-Week1.md)
