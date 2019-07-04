@@ -132,7 +132,7 @@ contract MusicChain{
     function getMusicNumber() public view returns(uint8[]) {
         uint8[] num2;
         for(uint8 i = 0; i < musics.length; i++){
-            if (music[i].isvalid && musics[i].owner == msg.sender) {
+            if (musics[i].isvalid && musics[i].owner == msg.sender) {
                 num2.push(i);
             }
         }
