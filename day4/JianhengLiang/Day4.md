@@ -338,34 +338,34 @@ function registerUser(string _name,  string _phone){
 
 分别注册两个普通用户
 
-[](https://github.com/fisco-bcos-group1/WeBank/blob/master/day4/JianhengLiang/assets/3.JPG)
+![](https://github.com/fisco-bcos-group1/WeBank/blob/master/day4/JianhengLiang/assets/3.JPG)
 
-[](https://github.com/fisco-bcos-group1/WeBank/blob/master/day4/JianhengLiang/assets/2.JPG)
+![](https://github.com/fisco-bcos-group1/WeBank/blob/master/day4/JianhengLiang/assets/2.JPG)
 
 ### 2.2 用户身份认证以及音乐上传、注册功能测试
 
 对用户Travis Scott进行音乐人认证，并将注册其音乐作品
 
-[](https://github.com/fisco-bcos-group1/WeBank/blob/master/day4/JianhengLiang/assets/4.JPG)
+![](https://github.com/fisco-bcos-group1/WeBank/blob/master/day4/JianhengLiang/assets/4.JPG)
 
 查看刚刚注册的音乐作品
 
-[](https://github.com/fisco-bcos-group1/WeBank/blob/master/day4/JianhengLiang/assets/7.JPG)
+![](https://github.com/fisco-bcos-group1/WeBank/blob/master/day4/JianhengLiang/assets/7.JPG)
 
 ### 2.3 通知生成以及查看功能测试
 
 以刚刚注册的音乐作品作为通知主体向用户Drake发送通知并查看
 
-[](https://github.com/fisco-bcos-group1/WeBank/blob/master/day4/JianhengLiang/assets/5.JPG)
+![](https://github.com/fisco-bcos-group1/WeBank/blob/master/day4/JianhengLiang/assets/5.JPG)
 
 ### 2.4 音乐授权以及查看功能测试
 
 音乐版权所有者用户Travis Scott向用户Drake授予音乐作品版权
 
-[](https://github.com/fisco-bcos-group1/WeBank/blob/master/day4/JianhengLiang/assets/6.JPG)
+![](https://github.com/fisco-bcos-group1/WeBank/blob/master/day4/JianhengLiang/assets/6.JPG)
 
 ### 2.5 音乐版权转让功能测试
 
 用户Travis Scott将其音乐作品版权转让给用户Drake
 
-[](https://github.com/fisco-bcos-group1/WeBank/blob/master/day4/JianhengLiang/assets/8.JPG)
+![](https://github.com/fisco-bcos-group1/WeBank/blob/master/day4/JianhengLiang/assets/8.JPG)
