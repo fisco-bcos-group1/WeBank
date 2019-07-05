@@ -15,8 +15,17 @@
 
 ### 小组成员
 
-- 张扬
+- 张扬（组长）
 - 张耀
 - 张光云
 - 黄旸珉
 - 梁健恒
+
+### 项目代码仓库
++ 该项目基于Spring-boot进行开发
++ 代码仓库不在此repository，具体链接如下所示
+
+[后端项目代码地址](https://github.com/fisco-bcos-group1/back-end)
+
+
+[前端项目代码地址](https://github.com/fisco-bcos-group1/front-end)
