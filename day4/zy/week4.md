@@ -5,7 +5,7 @@
 + Gredle：5.3.1
 
 ## 后端架构
-pic1
+![image](./picture/1.png)
 
 后端的整体架构大约分为3层：数据接口、服务层和Controller层，结构如上图所示。
 
