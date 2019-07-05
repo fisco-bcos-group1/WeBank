@@ -1,6 +1,6 @@
 # 第四周周报
 ## 项目环境配置
-+ IDE：IntelliJ IDEA （原本在用
++ IDE：IntelliJ IDEA 
 + jdk ：1.8.0_211
 + Gredle：5.3.1
 
