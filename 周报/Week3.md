@@ -13,7 +13,7 @@
 ## 周任务分工
 
 - 张光云：市场分析、需求分析
-- 张扬：学习 Spring-boot 框架
+- 张扬：学习 Spring-boot 框架； 学习报告：[学习报告](https://github.com/fisco-bcos-group1/WeBank/blob/master/day3/zy/Spring-boot%E5%AD%A6%E4%B9%A0.md)
 - 张耀：学习前端 Vue 框架、学习理解区块链
 - 梁健恒：深入理解学习智能合约 solidity
 - 黄旸珉：服务器搭建、环境配置
