@@ -1,16 +1,14 @@
 # WeBank 课程 —— 第一小组
 
 ### 项目介绍
-
-暂无
+**MusicChain--音链**
 
 ### 项目目录结构
 
-- `day1 - day*` 存放每天每个成员的作业
-- `MusicChain` 存放项目文件
+- `day1 - day*` 存放每天每个成员的作业，并在周报中使用
+- `MusicChain` 存放项目部分文件，主体代码参照下方链接
 - `周报` 文件夹存放周报内容
   - `assets` 图片资源文件夹
-  - `Week1` 暂时 存放各个组员的阅读笔记
   - `Week*.md` 周报内容
 
 ### 小组成员
@@ -23,7 +21,7 @@
 
 ### 项目代码仓库
 + 该项目基于Spring-boot进行开发
-+ 代码仓库不在此repository，具体链接如下所示
++ **代码仓库不在此WeBank的Repository中，具体链接如下所示**
 
 [后端项目代码地址](https://github.com/fisco-bcos-group1/back-end)
 
