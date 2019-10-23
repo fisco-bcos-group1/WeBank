@@ -24,7 +24,7 @@
 + 该项目基于Spring-boot进行开发
 + **代码仓库不在此WeBank的Repository中，具体链接如下所示**
 
-[后端项目代码地址](https://github.com/fisco-bcos-group1/back-end)
+[后端项目代码地址(Code for back-end)](https://github.com/fisco-bcos-group1/back-end)
 
 
-[前端项目代码地址](https://github.com/fisco-bcos-group1/front-end)
+[前端项目代码地址(Code for front-end)](https://github.com/fisco-bcos-group1/front-end)
